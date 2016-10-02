@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#front-image {
+    position: relative; 
+    float: left; 
+    width: 100%; 
+    height: auto; 
+    z-index: 100; 
+    margin: 0;  
+}	
+
+#about-photo {
+	position: relative;
+	float: left;
+	width: 30%; 
+	height: auto;
+	z-index: 9999;
+	margin: 0 2% 0 5%; 	
+}
+
+#about-section {
+	position: relative;
+	width: 100%; 
+	height: auto; 
+	overflow: hidden;
+	display: block; 
+	background: #ffffff; 
+	padding: 5%; 
+	z-index: 8000;
+}
+
+#rdd-logo {
+	position: relative;
+	float: center;  
+	margin-top: 5%;
+	margin-left: 35%; 
+	z-index: 9999;
+	width: 30%; 
+	height: auto;
+}
+
+#rdd-text {
+	position: relative;
+	float: center;
+	text-align: center;   
+	z-index: 9999; 
+	color: #CAFCD8;
+	padding: 10px; 
+}
+
+h1 {
+	font-size: 4.0vw !important; 
+}
+h2 {
+font-size: 3.5vw !important; 
+}
+h3 {
+font-size: 2.5vw !important; 
+}
+h4 {
+font-size: 2.0vw !important; 
+}
+h5 {
+font-size: 1.5vw !important; 
+}
+
+h1, h2 {
+	font-family: 'Lobster', cursive !important; 
+	color: #334D5C;
+}
+
+h3, h4, h5, h6, {
+	font-family: 'Fira Sans', sans-serif !important; 
+	color: #484A47;	
+	line-height: 130%;
+}
+
+a, li {
+	font-family:'Fira Sans', sans-serif !important; 
+	font-size: 2.0vw !important;
+	color: #334d5c; 
+	text-decoration: none; 
+}
+
+a:hover, li:hover {
+	color: #45b29d;  
+}
+
+/*
+ * Push Menu
+ */
+.pmenu {
+	background: #334D5C;
+	position: fixed;
+	overflow-y: auto;
+}
+.pmenu h3 {
+	color: #FFF;
+	padding: 20px;
+	font-size: 2vw; 
+	margin: 0;
+	font-weight: 300;
+	background: #334D5C;
+}
+.pmenu a {
+	display: block;
+	color: #FFF;
+	font-size: 2vw;
+	font-weight: 300;
+}
+.pmenu a:hover {
+	color: #45B29D;
+	text-decoration: none;
+	background-color: #334D5C;
+	font-weight: 500;
+}
+.pmenu-vertical {
+	width: 200px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.pmenu-vertical a {
+	border-bottom: 2px solid #334D5C;
+	padding: 1em;
+}
+.pmenu-left {
+	left: -200px;
+}
+.pmenu-left.pmenu-open {
+	left: 0px;
+}
+.pmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+.pmenu-push-toright {
+	left: 200px;
+}
+.pmenu,
+.pmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.pmenu .fa-minus {
+	font-size: 20px;
+}
+
+.pmenu-push-toright #showLeftPush {
+	left: 260px !important;
+}
+.latte-push-menu,
+.latte-push-menu .sub-menu {
+	padding: 0;
+	word-wrap: break-all;
+}
+.menu-item-has-children > .sub-menu {
+	display: none;
+}
+.menu-item-has-children:hover > .sub-menu {
+	display: block;
+}
+.latte-push-menu a {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#showLeftPush { 
+	position: fixed;
+	background: #CAFCD8;
+	color: #334D5C !important;
+	z-index: 8001;
+	display: block;
+	padding: 0px;
+	width: 50px;
+	top: 20px;
+	left: 20px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+	border-radius: 30px;
+	box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
+	line-height: 50px;
+}
+
+#about-button {
+	position: relative;
+	float: right; 
+	background-color: #334d5c;
+	border: 2px solid #334d5c;
+	font-family: 'Lobster', cursive;
+	font-size: 2vw; 
+	font-weight: 400; 
+	color: #cafcd8;
+	margin-right: 5%;
+	margin-top: 2%; 
+	width: 20%; 
+	height: auto; 
+}
+
+.about-button:hover {
+	background-color: #ffffff;
+	color: #334d5c; 	
+}
+
+.services {
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #334D5C; 
+	border: 10% solid transparent;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle !important;
+	margin: 4%;
+	width: 90%; 
+	height: 75%;
+}
+
+.services td {
+	width: 33%; 
+	background-color: #334D5C;
+	color: #cafcd8;
+	max-height: 200px; 
+	padding: 10px; 
+	font-size: 4.0vw;
+}
+
+#services-section {
+	position: relative;
+	width: 100%; 
+	height: auto; 
+	overflow: hidden;
+	display: block; 
+	background: #334D5C; 
+	padding: 5%; 
+	z-index: 8000;
+}
+
+#work-section {
+	position: relative;
+	width: 100%; 
+	height: auto; 
+	overflow: hidden;
+	display: block; 
+	background: #ffffff; 
+	padding: 5%; 
+	z-index: 8000;
+}
+
+#work {
+	font-family: 'Fira Sans', sans-serif !important;
+	background-color: #ffffff; 
+	border: 2% solid #45B29D;
+	padding: 10px; 
+	text-align: center;
+	vertical-align: middle !important;
+	margin: 4%;
+	width: 90%; 
+	height: 75%;
+}
+
+#work td {
+	width: 33%; 
+	background-color: #ffffff; 
+	color: #334D5C;
+	max-height: 200px; 
+	padding: 10px; 
+	font-size: 3.0vw;
+	align-text: center !important;
+	line-height: 150%; 
+} 
+
